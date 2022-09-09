@@ -13,16 +13,47 @@
   border: 2px solid powderblue;
   padding: 30px;
 }
+	table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 	</style>
 	<link rel="stylesheet" href="https://www.google.com">
 <meta charset="utf-8">
+
 <title>Erin's Travel Guide</title>
 	 <link rel="icon" type="image/x-icon" href="images/favicon.ico.jpg">
+<style>
+	.city {
+  background-color: aqua;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+	#myHeader {
+  background-color: blueviolet;
+  color: darkblue;
+  padding: 25px;
+  text-align: center;
+} 
+	</style>	
 </head>
 
 <body>
 	<div id="container">
-	<h1>Welcome To My Travel Guide!</h1>
+	<h1 style ="text-align:center;">Welcome To My Travel Guide!</h1>
 		<h2>1st Travel Experience: Colorado</h2>
 		<p>The first time I went to Colorado, I arrived in the evening and everything was dark. <br> I rememember seeing tall shadows of the mountains as I drove through them.<br> <i>I couldn't wait to wake the next morning.</i> 
 		</p>
@@ -36,5 +67,72 @@
 		<br>
 		<p style="color:red;">Also don't forget to follow me on <a href="https://www.facebook.com/ecantu84"> Facebook.</a></p>
 				</div>
+	<h2>Travel Tracking Table</h2>
+
+<table>
+  <tr>
+    <th>State</th>
+    <th>City</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Colorado</td>
+    <td>Colorado Springs</td>
+    <td>United States</td>
+  </tr>
+  <tr>
+    <td>Nevada</td>
+    <td>Las Vegas</td>
+    <td>United States</td>
+  </tr>
+  <tr>
+    <td>Illinois</td>
+    <td>Chicago</td>
+    <td>United States</td>
+  </tr>
+  <tr>
+    <td>Puerto Rico</td>
+    <td>San Juan</td>
+    <td>US Territory</td>
+  </tr>
+  <tr>
+    <td>California</td>
+    <td>San Diego</td>
+    <td>United States</td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+	<h2>Must Experience List</h2>
+
+<ul>
+  <li>Food</li>
+  <li>Nightlife</li>
+  <li>Souvenier Shops</li>
+  <li>Historical Sites</li>
+</ul> 
+	
+	
+<h1 id="myHeader">My Bucket List</h1>
+	
+<div class="city">
+<h2>Thailand</h2>
+<p>Thailand will be where I travel for my honeymoon</p>
+</div> 
+
+<div class="city">
+<h2>France</h2>
+<p>I want to travel to Paris, France</p>
+</div>
+
+<div class="city">
+<h2>China</h2>
+<p>I would like to travel to Hong Kong</p>
+</div>
+<script>
+document.getElementById("Food").innerHTML = "Winery";
+</script> 
+
 </body>
+	
 </html>
